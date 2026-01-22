@@ -1,4 +1,4 @@
-# .ScrGmsCpp
+# Scare Games
 
 - A binary tree–based tournament simulation that organizes and tracks players according to their scores, dynamically modeling competitive progression and advancement in a bracket-style structure inspired by the tournament system depicted in Disney’s Monsters, Inc.
 
