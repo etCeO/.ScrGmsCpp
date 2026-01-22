@@ -1,6 +1,6 @@
 # .ScrGmsCpp
 
-- A binary tree mapping simulation that tracks players in tournaments according to their scores (similar to the tournaments in Disney's Monsters Inc.)
+- A binary tree–based tournament simulation that organizes and tracks players according to their scores, dynamically modeling competitive progression and advancement in a bracket-style structure inspired by the tournament system depicted in Disney’s Monsters, Inc.
 
 # AUTHOR INFO
 
