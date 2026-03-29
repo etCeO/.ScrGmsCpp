@@ -93,11 +93,11 @@ The input file is expected to contain a list of monsters.
 
 Example Input Format
 
-4
-Mike, 75
-Sully, 95
-Randall, 85
-Boo, 60
+- 4
+- Mike, 75
+- Sully, 95
+- Randall, 85
+- Boo, 60
 
 ### Rules
 ---
