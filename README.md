@@ -37,7 +37,8 @@ Notes:
 
 This program simulates a competitive tournament using a binary tree structure.
 
-### What the program does:
+### What The Program Does
+---
 
 1. Reads in a list of monsters and their attributes from an input file
 2. Initializes a tournament bracket (tree structure)
@@ -50,7 +51,8 @@ OR
 
 4. Play continues until a winner is determined in the tournament bracket
 
-### Output:
+### Output
+---
 
 The program:
 
@@ -63,18 +65,46 @@ Example Run
 
 - ./scaregames monsters.txt double
 
-Example conceptual output:
+- Example conceptual output:
 
-Round 1:
-Mike vs Sully -> Winner: Sully
-Randall vs Boo -> Winner: Randall
+  - Round 1:
+  - Mike vs Sully -> Winner: Sully
+  - Randall vs Boo -> Winner: Randall
 
-Winners Bracket Final:
-Sully vs Randall -> Winner: Sully
+  - Winners Bracket Final:
+  - Sully vs Randall -> Winner: Sully
 
-Losers Bracket:
-Mike vs Boo -> Winner: Mike
-Mike vs Randall -> Winner: Randall
+  - Losers Bracket:
+  - Mike vs Boo -> Winner: Mike
+  - Mike vs Randall -> Winner: Randall
 
-Final:
-Sully vs Randall -> Champion: Sully
+  - Final:
+  - Sully vs Randall -> Champion: Sully
+ 
+## Input Format
+
+The input file is expected to contain a list of monsters.
+
+### Expected Structure
+--
+
+1. The first line is expected to contain an integer value, i.e., the number of monsters.
+2. The subsequent lines will contain the monsters' information.
+
+Example Input Format
+
+4
+Mike, 75
+Sully, 95
+Randall, 85
+Boo, 60
+
+### Rules
+---
+Each monster is expected to have the following attributes:
+
+1. The monster's name (string, no space recommended)
+2. The monster's power level (integer)
+3. The monster with the higher power level is expected to win the game
+
+In case both monsters have the same power level, the outcome is dependent on the program's implementation (i.e., either random or the order in which they are read).
