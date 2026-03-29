@@ -122,14 +122,14 @@ Each node in the tree contains:
 - The winner of the game goes to the next level
 - Result propagates to the parent node
 
-1. Single Elimination Mode
+#### 1. Single Elimination Mode
 
 Behavior:
 - Loser is removed from the tree
 - Winner goes to the next level
 - Ends when only one champion is left
 
-2. Double Elimination Mode
+#### 2. Double Elimination Mode
 
 Structure:
 - Winners bracket: main tree structure
