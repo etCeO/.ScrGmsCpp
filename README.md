@@ -1,6 +1,6 @@
 # Scare Games
 
-- A binary tree–based tournament simulation that organizes and tracks players according to their scores, dynamically modeling competitive progression and advancement in a bracket-style structure inspired by the tournament system depicted in Disney’s Monsters, Inc.
+- A binary tree-based tournament simulation that organizes and tracks players according to their scores, dynamically modeling competitive progression and advancement in a bracket-style structure inspired by the tournament system depicted in Disney’s Monsters, Inc.
 
 ## Author Info
 
@@ -26,6 +26,55 @@
 ## Instructions For Running
 - To compile: g++ *.cpp -o scaregames.exe
 - To run: ./scaregames monsters.txt double
-- Note: "monsters.txt" may be replaced with any file containing monster information
-- "double" represents a double tournament with winner and loser brackets
-- if a single tournament where losers are eliminated is desired, simply type "single" in place of double
+
+Notes: 
+
+1. "monsters.txt" may be replaced with any file containing monster information.
+2. "double" represents a double tournament with winner and loser brackets.
+3. If a single tournament where losers are eliminated is desired, simply type "single" in place of double.
+
+## Usage
+
+This program simulates a competitive tournament using a binary tree structure.
+
+### What the program does:
+
+1. Reads in a list of monsters and their attributes from an input file
+2. Initializes a tournament bracket (tree structure)
+3. Simulates matches between monsters:
+  - Winners move forward in the tournament bracket
+  - Losers:
+    - Lose in a loser’s bracket (double elimination)
+OR
+    - Are eliminated (single elimination) in the tournament bracket
+
+4. Play continues until a winner is determined in the tournament bracket
+
+### Output:
+
+The program:
+
+- Matches pairings and results
+- Shows progression through the tournament bracket
+- Shows the winner of the tournament bracket
+- Constructs and displays the tournament tree
+
+Example Run
+
+- ./scaregames monsters.txt double
+
+Example conceptual output:
+
+Round 1:
+Mike vs Sully -> Winner: Sully
+Randall vs Boo -> Winner: Randall
+
+Winners Bracket Final:
+Sully vs Randall -> Winner: Sully
+
+Losers Bracket:
+Mike vs Boo -> Winner: Mike
+Mike vs Randall -> Winner: Randall
+
+Final:
+Sully vs Randall -> Champion: Sully
