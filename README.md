@@ -86,7 +86,7 @@ Example Run
 The input file is expected to contain a list of monsters.
 
 ### Example
---
+---
 
 - Mike, 75
 - Sully, 95
