@@ -85,15 +85,9 @@ Example Run
 
 The input file is expected to contain a list of monsters.
 
-### Expected Structure
+### Example
 --
 
-1. The first line is expected to contain an integer value, i.e., the number of monsters.
-2. The subsequent lines will contain the monsters' information.
-
-Example Input Format
-
-- 4
 - Mike, 75
 - Sully, 95
 - Randall, 85
