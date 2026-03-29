@@ -102,3 +102,41 @@ Each monster is expected to have the following attributes:
 3. The monster with the higher power level is expected to win the game
 
 In case both monsters have the same power level, the outcome is dependent on the program's implementation (i.e., either random or the order in which they are read).
+
+## Implementation Details
+
+### Core Concept – Tournament Tree
+---
+
+A binary tree represents the tournament:
+- Each node represents a game
+- Leaf nodes are the initial competitors
+- Each parent node contains the winner of their children’s games
+
+### Match Simulation
+---
+
+Each node in the tree contains:
+- A game between two monsters
+- Comparison of their scores
+- The winner of the game goes to the next level
+- Result propagates to the parent node
+
+1. Single Elimination Mode
+
+Behavior:
+- Loser is removed from the tree
+- Winner goes to the next level
+- Ends when only one champion is left
+
+2. Double Elimination Mode
+
+Structure:
+- Winners bracket: main tree structure
+- Loser’s bracket: auxiliary structure
+
+Behavior:
+- First loss: move to loser’s bracket
+- Second loss: removed from the tree
+
+Final may involve one or two games depending on whether the winner of the loser’s bracket defeats the undefeated player.
